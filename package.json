@@ -1,0 +1,23 @@
+{
+  "name": "bwark_gulp",
+  "version": "1.0.0",
+  "description": "Bwark entertaiment with gulp",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanyafn/bwark_gulp.git"
+  },
+  "author": "Tanya Fonina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanyafn/bwark_gulp/issues"
+  },
+  "homepage": "https://github.com/tanyafn/bwark_gulp#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
