@@ -5,6 +5,8 @@ var uglify = require('gulp-uglify');
 var sass   = require('gulp-sass');
 var jade   = require('gulp-jade');
 var gls    = require('gulp-live-server');
+var neat = require('node-neat');
+var refills = require('node-refills');
 
 var paths = {
   js:    './src/js/*.js',
@@ -28,8 +30,10 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('sass', function () {
+  var includePaths = require('node-refills').includePaths;
+  
   return gulp.src(paths.sass)
-    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(sass({ outputStyle: 'compressed', includePaths: includePaths}))
     .pipe(gulp.dest(paths.build));
 })
 
