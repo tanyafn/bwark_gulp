@@ -1,0 +1,24 @@
+.search {
+  @include outer-container;
+  max-width: $max-width;
+
+  .mewtwo-widget--de2ad20fd5d65f3ca71c32a8d282193b .mewtwo-flights {
+    border: none !important;
+  }
+  .mewtwo-widget .mewtwo-flights {
+    padding: 0 !important;
+  }
+  .mewtwo-flights--m {
+    margin-bottom: 1em;
+  }
+  .mewtwo-widget .mewtwo-flights-dates-depart-weekday__name,
+  .mewtwo-widget .mewtwo-flights-dates-return-weekday__name,
+  .mewtwo-widget .mewtwo-flights-container input[type='text'] {
+    text-transform: capitalize !important;
+  }
+  .mewtwo-flights-trip_class__class {
+    font-size: 10px !important;
+    text-transform: capitalize !important;
+    margin-top: 2px !important;
+  }
+}

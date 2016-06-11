@@ -1,4 +1,25 @@
 extends ./layout.jade
 
 block content
-  p subregion
+  header.header
+    h1.header__heading
+      |Cheap Flights to South-East Asia
+    p.header__subheading
+      |Search cheap flights in South-East Asia.
+
+  nav.breadcrumbs
+    a.breadcrumbs__link(href="/") Cheap Flights
+    span.breadcrumbs__separator &gt;
+    span.breadcrumbs__current South-East Asia
+
+  section.search
+    script(charset="utf-8" src="//www.travelpayouts.com/widgets/de2ad20fd5d65f3ca71c32a8d282193b.js?v=774" async='async')
+
+  section.content
+    p
+      |Countries in South-East Asia are: <a href="/country.html">Myanmar</a>,
+      |<a href="/country.html">Malaysia</a>, <a href="/country.html">Laos</a>,
+      |<a href="/country.html">Cambodia</a>.
+
+  footer.footer
+    p.footer__copyright &copy; 2016 Company

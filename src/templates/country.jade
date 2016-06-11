@@ -1,0 +1,30 @@
+extends ./layout.jade
+
+block content
+  header.header
+    h1.header__heading
+      |Cheap Flights to Thailand
+    p.header__subheading
+      |Search cheap flights to Thailand and neighboring countries on CheapFlightHound.
+
+  nav.breadcrumbs
+    a.breadcrumbs__link(href="/") Cheap Flights
+    span.breadcrumbs__separator &gt;
+    a.breadcrumbs__link(href="/subregion.html") South-East Asia
+    span.breadcrumbs__separator &gt;
+    span.breadcrumbs__current Thailand
+
+  section.search
+    script(charset="utf-8" src="//www.travelpayouts.com/widgets/de2ad20fd5d65f3ca71c32a8d282193b.js?v=774" async='async')
+
+  section.content
+    p
+      |Thailand is a country in <a href="#">South-East Asia</a> with the capital in <a href="#">Bangkok</a>.
+      |65.1 million people live in Thailand. That makes it the 4th populous country in <a href="#">South-East Asia</a>,
+      |the 11th populous in Asia, and the 21st populous in the world. The most widely spoken language in Thailand is Thai.
+    p The area of Thailand is 513.1 thousand square kilometers. That makes it the 3rd biggest country in South-East Asia region, the 14th biggest in Asia, and the 58th biggest in the world.
+    p The currency in Thailand is Thai Baht. The top level Internet domain for Thailand is .th. The calling code for Thailand is 66.
+    p Neighboring countries for Thailand are: <a href="#">Myanmar</a>, <a href="#">Malaysia</a>, <a href="#">Laos</a>, <a href="#">Cambodia</a>.
+
+  footer.footer
+    p.footer__copyright &copy; 2016 Company

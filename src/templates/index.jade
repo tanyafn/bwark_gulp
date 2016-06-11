@@ -1,22 +1,20 @@
 extends ./layout.jade
 
 block content
-  section
-    h1 South East Asia
-    p Lolz
-    div(class="cards")
-      div(class="card")
-        div(class="card-image")
-          img(src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="")
-        div(class="card-header")
-          First Card
-        div(class="card-copy")
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.
+  header.header
+    h1.header__heading
+      |Cheap Flight Hound
+    p.header__subheading
+      |Search cheap flights to any destination.
 
-      div(class="card")
-        div(class="card-image")
-          img(src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="")
-        div(class="card-header")
-          First Card
-        div(class="card-copy")
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.
+  section.search
+    script(charset="utf-8" src="//www.travelpayouts.com/widgets/de2ad20fd5d65f3ca71c32a8d282193b.js?v=774" async='async')
+
+  section.content
+    p
+      |Search flights to any country in: <a href="/subregion.html">South-East Asia</a>,
+      |<a href="/subregion.html">South Asia</a>, <a href="/subregion.html">East Asia</a>,
+      |<a href="/subregion.html">Central Asia</a>.
+
+  footer.footer
+    p.footer__copyright &copy; 2016 Company

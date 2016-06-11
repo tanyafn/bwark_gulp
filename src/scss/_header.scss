@@ -1,0 +1,12 @@
+.header {
+  @include outer-container;
+  max-width: $max-width;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__subheading {
+    text-align: center;
+  }
+}

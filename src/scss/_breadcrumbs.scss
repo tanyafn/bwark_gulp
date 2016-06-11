@@ -1,0 +1,17 @@
+.breadcrumbs {
+  @include outer-container;
+  max-width: $max-width;
+  padding: 0 0 1rem;
+  text-align: center;
+
+  &__link {}
+
+  &__separator {
+    padding: 0 .25rem;
+    color: #999;
+  }
+
+  &__current {
+    color: #999;
+  }
+}

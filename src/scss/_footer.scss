@@ -1,0 +1,8 @@
+.footer {
+  @include outer-container;
+  max-width: $max-width;
+
+  &__copyright {
+    text-align: center;
+  }
+}

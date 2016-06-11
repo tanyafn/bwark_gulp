@@ -1,0 +1,44 @@
+$sans-serif: "Fira Sans", sans-serif;
+
+$medium-screen: 40em !default;
+$base-line-height: 1.5em !default;
+$base-spacing: 1.5em !default;
+$action-color: #477dca !default;
+$dark-gray: #333 !default;
+$light-gray: #ddd !default;
+$base-font-color: $dark-gray !default;
+
+body {
+  font-family: $sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: $sans-serif;
+  margin: 0;
+  color: $base-font-color;
+  line-height: $base-line-height;
+  font-weight: 300;
+  letter-spacing: 1;
+  margin-bottom: 1.5em;
+
+}
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 0.6em;
+
+  @include media($medium-screen) {
+    font-size: 2.4em;
+  }
+}
+
+hr {
+  border-bottom: 1px solid $light-gray;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
